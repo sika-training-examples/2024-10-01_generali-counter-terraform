@@ -14,6 +14,7 @@ module "counter" {
     POSTGRES_USER     = module.postgres.username
     POSTGRES_DATABASE = "counter"
   }
+  worker_count = var.replicas
 }
 
 output "counter_url" {

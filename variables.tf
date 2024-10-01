@@ -20,3 +20,9 @@ variable "firewall_rules" {
     end_ip_address   = string
   }))
 }
+
+variable "replicas" {
+  description = "Number of app replicas"
+  type        = number
+  default     = 1
+}
